@@ -1,5 +1,19 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+**Live deployment:** https://wdd430-portfolio-ebon.vercel.app/
+
+## W01 Assignment: My First Next.js Application
+
+**Custom Component:** `ContactCard` ([components/ContactCard.tsx](components/ContactCard.tsx)) — a Server Component that displays contact details (email as a `mailto:` link, plus an optional location). It accepts a typed `email: string` prop and an optional `location?: string` prop, is styled with Tailwind CSS, and is rendered on the [About page](app/about/page.tsx).
+
+### Reflection Questions
+
+1. **What is the purpose of `layout.tsx`?**
+   `layout.tsx` defines the shared UI shell (like the header and footer) that wraps every page in a route segment, so common structure doesn't need to be repeated on each page.
+
+2. **Why are Server Components used by default in the App Router?**
+   Server Components render on the server, which keeps JavaScript out of the client bundle, allows direct data fetching, and improves performance — Next.js only opts into Client Components when interactivity requires it.
+
 ## Getting Started
 
 First, run the development server:

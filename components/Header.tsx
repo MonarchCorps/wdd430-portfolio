@@ -14,9 +14,12 @@ export default function Header() {
           <Link href="/" className="text-sm font-semibold hover:text-yellow-600 transition">
             Home
           </Link>
-          <a href="#projects" className="text-sm font-semibold hover:text-yellow-600 transition">
+          <Link href="/about" className="text-sm font-semibold hover:text-yellow-600 transition">
+            About
+          </Link>
+          <Link href="/#projects" className="text-sm font-semibold hover:text-yellow-600 transition">
             Projects
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
